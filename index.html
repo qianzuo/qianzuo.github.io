@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>左钱 | 安徽大学 | 个人主页</title>
+  <meta name="description" content="左钱，安徽大学。研究兴趣：随机算法、量子算法、受量子启发的经典算法。" />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2b;
+      --text:#e7eefc;
+      --muted:#a8b3cc;
+      --brand:#7aa2ff;
+      --line:rgba(255,255,255,.10);
+      --shadow:0 14px 45px rgba(0,0,0,.35);
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC","Hiragino Sans GB","Microsoft YaHei", Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 650px at 10% 0%, rgba(122,162,255,.22), transparent 60%),
+        radial-gradient(900px 520px at 90% 25%, rgba(110,231,183,.16), transparent 55%),
+        var(--bg);
+      line-height:1.7;
+    }
+    a{color:inherit; text-decoration:none}
+    .nav{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(10px);
+      background:rgba(11,18,32,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .navin{
+      max-width:1040px; margin:0 auto; padding:14px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px}
+    .dot{width:10px; height:10px; border-radius:50%; background:var(--brand); box-shadow:0 0 0 6px rgba(122,162,255,.14)}
+    .links{display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end}
+    .chip{
+      padding:8px 12px; border-radius:999px;
+      border:1px solid var(--line); color:var(--muted); font-size:14px;
+      transition:.2s;
+    }
+    .chip:hover{color:var(--text); border-color:rgba(122,162,255,.35); transform:translateY(-1px)}
+    .wrap{max-width:1040px; margin:0 auto; padding:28px 18px 64px}
+    .hero{
+      display:grid;
+      grid-template-columns:1.45fr .55fr;
+      gap:18px;
+      padding-top:10px;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      box-shadow:var(--shadow);
+      padding:22px;
+    }
+    h1{margin:0 0 8px; font-size:38px; line-height:1.15}
+    .sub{color:var(--muted); font-size:16px}
+    .badges{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .badge{
+      font-size:13px; padding:7px 10px; border-radius:999px;
+      border:1px solid rgba(122,162,255,.28);
+      background:rgba(122,162,255,.10);
+    }
+    .kvs{display:grid; grid-template-columns:110px 1fr; gap:10px 14px; margin-top:14px}
+    .k{color:var(--muted); font-size:13px}
+    .v{font-size:14px}
+    .sep{height:1px; background:var(--line); margin:16px 0}
+    h2{margin:0 0 12px; font-size:18px; letter-spacing:.2px}
+    .list{display:flex; flex-direction:column; gap:10px}
+    .item{
+      padding:14px; border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(17,26,43,.55);
+    }
+    .top{display:flex; align-items:flex-start; justify-content:space-between; gap:12px}
+    .title{font-weight:800}
+    .meta{color:var(--muted); font-size:13px; white-space:nowrap}
+    .item p{margin:8px 0 0; color:var(--muted); font-size:14px}
+    ol{margin:0; padding-left:20px}
+    li{margin:8px 0}
+    .note{color:var(--muted); font-size:13px; margin-top:10px}
+    footer{margin-top:26px; color:var(--muted); font-size:13px; text-align:center}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 12px; border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      font-weight:650; font-size:14px;
+      transition:.2s;
+    }
+    .btn:hover{transform:translateY(-1px); border-color:rgba(255,255,255,.18)}
+    .btn.primary{
+      border-color:rgba(122,162,255,.45);
+      background:linear-gradient(180deg, rgba(122,162,255,.22), rgba(122,162,255,.10));
+    }
+    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="navin">
+      <div class="brand"><span class="dot"></span><span>左钱 · Qian Zuo</span></div>
+      <nav class="links">
+        <a class="chip" href="#about">简介</a>
+        <a class="chip" href="#projects">项目</a>
+        <a class="chip" href="#papers">论文</a>
+        <a class="chip" href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- 简介 -->
+    <section class="hero" id="about">
+      <div class="card">
+        <h1>左钱（Qian Zuo）</h1>
+        <div class="sub">
+          安徽大学在职。男，安徽安庆人，中共党员。2022 年于武汉大学获得计算数学博士学位，
+          随后在北京大学计算机学院与前沿计算研究中心开展博士后研究。
+        </div>
+
+        <div class="badges">
+          <span class="badge">随机算法</span>
+          <span class="badge">量子算法</span>
+          <span class="badge">受量子启发的经典算法</span>
+        </div>
+
+        <div class="btns">
+          <a class="btn primary" href="mailto:qianzuo@ahu.edu.cn">Email：qianzuo@ahu.edu.cn</a>
+          <!-- 你如果有简历 PDF，把文件命名为 resume.pdf 放在同目录即可启用 -->
+          <a class="btn" href="./resume.pdf" target="_blank" rel="noopener">下载简历（可选）</a>
+        </div>
+
+        <div class="sep"></div>
+        <div class="kvs">
+          <div class="k">单位</div><div class="v">安徽大学</div>
+          <div class="k">籍贯</div><div class="v">安徽 · 安庆</div>
+          <div class="k">研究兴趣</div>
+          <div class="v">随机算法、量子算法、受量子启发的经典算法等</div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h2>研究方向概览</h2>
+        <div class="list">
+          <div class="item">
+            <div class="top"><div class="title">随机化数值线性代数</div><div class="meta">RLA</div></div>
+            <p>随机化行/列作用（row/column-action）方法、最小二乘与相关问题的高效求解。</p>
+          </div>
+          <div class="item">
+            <div class="top"><div class="title">量子与量子启发算法</div><div class="meta">Q</div></div>
+            <p>量子算法设计、以及在经典平台上实现的量子启发式算法框架。</p>
+          </div>
+          <div class="item">
+            <div class="top"><div class="title">方法论</div><div class="meta">Method</div></div>
+            <p>强调可证明的算法性质、复杂度分析与可复现实验验证。</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- 项目 -->
+    <section class="card" id="projects" style="margin-top:18px">
+      <h2>项目经历</h2>
+      <div class="list">
+        <div class="item">
+          <div class="top">
+            <div class="title">国家自然科学青年基金项目（No. 12401488）</div>
+            <div class="meta">2025/01–2027/12 · 主持</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <div class="title">计算科学湖北省重点实验室开放课题基金项目</div>
+            <div class="meta">2024/01–2024/12 · 主持</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <div class="title">国家自然科学面上项目（No. 62372006）</div>
+            <div class="meta">2024/01–2027/12 · 参与</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <div class="title">国家自然科学重大研究计划项目（No. 92365117）</div>
+            <div class="meta">2024/01–2026/12 · 参与</div>
+          </div>
+        </div>
+      </div>
+      <div class="note">如需在此处补充“项目简介/研究内容/本人贡献”，我可以按学术主页常见写法进一步完善。</div>
+    </section>
+
+    <!-- 论文 -->
+    <section class="card" id="papers" style="margin-top:18px">
+      <h2>研究成果（代表性论文）</h2>
+      <div class="item">
+        <ol>
+          <li>
+            Qian Zuo, Nian-Ci Wu, and Yatian Wang.
+            <em>On the randomized multiple row-action methods for solving linear least-squares problems</em>,
+            <span class="meta">Numerical Algorithms</span>, 2024, 1–28.
+          </li>
+          <li>
+            Qian Zuo, Yimin Wei, and Hua Xiang.
+            <em>Quantum-inspired algorithm for total least squares problem</em>,
+            <span class="meta">Journal of Computational and Applied Mathematics</span>, 2024, 451, 116042.
+          </li>
+          <li>
+            Nian-Ci Wu, Qian Zuo, and Yatian Wang.
+            <em>On the Polyak momentum variants of the greedy deterministic single and multiple row-action methods</em>,
+            <span class="meta">Numerical Linear Algebra with Applications</span>, 2024, e2552.
+          </li>
+        </ol>
+      </div>
+      <div class="note">如果你有 DOI/论文链接/ArXiv 链接，我可以帮你把每条论文做成可点击的链接式列表。</div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="card" id="contact" style="margin-top:18px">
+      <h2>联系方式</h2>
+      <div class="kvs">
+        <div class="k">Email</div>
+        <div class="v"><a href="mailto:qianzuo@ahu.edu.cn">qianzuo@ahu.edu.cn</a></div>
+      </div>
+      <div class="sep"></div>
+      <div class="note">
+        可选扩展：加入个人照片、Google Scholar、ResearchGate、ORCID、GitHub、研究组/实验室链接等。
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> 左钱（Qian Zuo） · Anhui University
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
